@@ -1,9 +1,9 @@
 %define upstream_name    Net-LDAP-Server
-%define upstream_version 0.42
+%define upstream_version 0.43
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    LDAP server side protocol handling
 License:    GPL+ or Artistic
