@@ -1,15 +1,13 @@
 %define upstream_name    Net-LDAP-Server
-%define upstream_version 0.43
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.43
+Release:	6
 
 Summary:	LDAP server side protocol handling
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://git@github.com:alexrj/Net-LDAP-Server
-Source0:	https://cpan.metacpan.org/authors/id/A/AA/AAR/Net-LDAP-Server-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AA/AAR/Net-LDAP-Server-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ BuildArch:	noarch
 LDAP server side protocol handling.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
